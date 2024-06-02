@@ -1,0 +1,55 @@
+{
+	"trigger_id": "triggerId",
+	"view": {
+		"type": "modal",
+		"callback_id": "UserSelection",
+		"title": {
+			"type": "plain_text",
+			"text": "Wicebot",
+			"emoji": true
+		},
+		"submit": {
+			"type": "plain_text",
+			"text": "Submit",
+			"emoji": true
+		},
+		"close": {
+			"type": "plain_text",
+			"text": "Cancel",
+			"emoji": true
+		},
+		"blocks": [
+			{
+				"type": "section",
+				"block_id": "o09a",
+				"text": {
+					"type": "mrkdwn",
+					"text": "Please select/deselect all users who should be licensed to use Wicebot.",
+					"verbatim": false
+				}
+			},
+			{
+				"type": "input",
+				"block_id": "update_selected_users",
+				"label": {
+					"type": "plain_text",
+					"text": "Select/Deselect users",
+					"emoji": true
+				},
+				"optional": false,
+				"dispatch_action": false,
+				"element": {
+					"type": "multi_users_select",
+					"action_id": "AssignedUsers",
+					"initial_users": ["intialUsersId"],
+					"placeholder": {
+						"type": "plain_text",
+						"text": "Users who will be licensed to use Wicebot",
+						"emoji": true
+					},
+					"max_selected_items": "totalcountOfLicenses"
+				}
+			}
+		]
+	}
+}

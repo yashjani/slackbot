@@ -1,0 +1,126 @@
+{
+  "trigger_id": "triggerId",
+  "view": {
+    "type": "modal",
+    "callback_id": "MoodSelection",
+    "title": {
+      "type": "plain_text",
+      "text": "Mood Selector",
+      "emoji": true
+    },
+    "submit": {
+      "type": "plain_text",
+      "text": "Submit",
+      "emoji": true
+    },
+    "close": {
+      "type": "plain_text",
+      "text": "Cancel",
+      "emoji": true
+    },
+    "blocks": [
+      {
+        "type": "section",
+        "text": {
+          "type": "mrkdwn",
+          "text": ":smiley: *Select Your Mood* :smiley:"
+        }
+      },
+      {
+        "type": "actions",
+        "elements": [
+          {
+            "type": "button",
+            "text": {
+              "type": "plain_text",
+              "text": ":grinning: Happy",
+              "emoji": true
+            },
+            "value": "happy",
+            "action_id": "happy_button"
+          },
+          {
+            "type": "button",
+            "text": {
+              "type": "plain_text",
+              "text": ":disappointed: Sad",
+              "emoji": true
+            },
+            "value": "sad",
+            "action_id": "sad_button"
+          },
+          {
+            "type": "button",
+            "text": {
+              "type": "plain_text",
+              "text": ":star-struck: Excited",
+              "emoji": true
+            },
+            "value": "excited",
+            "action_id": "excited_button"
+          },
+          {
+            "type": "button",
+            "text": {
+              "type": "plain_text",
+              "text": ":worried: Anxious",
+              "emoji": true
+            },
+            "value": "anxious",
+            "action_id": "anxious_button"
+          },
+          {
+            "type": "button",
+            "text": {
+              "type": "plain_text",
+              "text": ":neutral_face: Neutral",
+              "emoji": true
+            },
+            "value": "neutral",
+            "action_id": "neutral_button"
+          },
+          {
+            "type": "button",
+            "text": {
+              "type": "plain_text",
+              "text": ":angry: Angry",
+              "emoji": true
+            },
+            "value": "angry",
+            "action_id": "angry_button"
+          },
+          {
+            "type": "button",
+            "text": {
+              "type": "plain_text",
+              "text": ":sleeping: Sleepy",
+              "emoji": true
+            },
+            "value": "sleepy",
+            "action_id": "sleepy_button"
+          },
+          {
+            "type": "button",
+            "text": {
+              "type": "plain_text",
+              "text": ":sunglasses: Cool",
+              "emoji": true
+            },
+            "value": "cool",
+            "action_id": "cool_button"
+          },
+          {
+            "type": "button",
+            "text": {
+              "type": "plain_text",
+              "text": ":cry: Crying",
+              "emoji": true
+            },
+            "value": "crying",
+            "action_id": "crying_button"
+          }
+        ]
+      }
+    ]
+  }
+}

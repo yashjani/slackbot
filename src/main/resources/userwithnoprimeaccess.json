@@ -1,0 +1,50 @@
+{
+	"view_id":"viewId",
+	"type": "home",
+	"blocks": [
+		{
+			"type": "header",
+			"text": {
+				"type": "plain_text",
+				"text": "Unleash the power of :bulb: GPT with :robot_face: Wicebot, your ultimate AI companion :speech_balloon:",
+				"emoji": true
+			}
+		},
+		{
+			"type": "divider"
+		},
+		{
+			"type": "section",
+			"text": {
+				"type": "mrkdwn",
+				"text": "*Welcome to Wicebot!*\nHere are some of our features:"
+			}
+		},
+		{
+			"type": "section",
+			"text": {
+				"type": "mrkdwn",
+				"text": ":speech_balloon: Understands and responds to natural language input\n:briefcase: Provides assistance with a variety of tasks\n:brain: Advanced AI capabilities for understanding context and intent\n:electric_plug: Can be integrated with various platforms\n"
+			}
+		},
+		{
+			"type": "divider"
+		},
+		{
+			"type": "section",
+			"text": {
+				"type": "mrkdwn",
+				"text": "*Wicebot in action!*"
+			}
+		},
+		{
+			"type": "image",
+			"title": {
+				"type": "plain_text",
+				"text": "Wicebot in action"
+			},
+			"image_url": "https://media.giphy.com/media/3oKIPnAiaMCws8nOsE/giphy.gif",
+			"alt_text": "Wicebot in action"
+		}
+	]
+}

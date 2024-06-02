@@ -1,0 +1,37 @@
+{
+	"callback_id" : "CommandMessage",
+	"blocks": [
+		{
+			"type": "section",
+			"text": {
+				"type": "mrkdwn",
+				"text": "messageOutput"
+			}
+		},
+		{
+			"type": "actions",
+			"elements": [
+				{
+					"type": "button",
+					"action_id": "PostMessageId",
+					"text": {
+						"type": "plain_text",
+						"text": "Post",
+						"emoji": true
+					},
+					"value": "PostMessage"
+				}
+			]
+		}
+	],
+	"metadata": {
+        "event_type": "task_created",
+        "event_payload": {
+            "id": "TK-2132",
+            "summary": "New issue with the display of mobile element",
+            "description": "An end user has found a problem with the new mobile container for data entry. It was reproduced in the current version of IOS.",
+            "priority": "HIGH",
+            "resource_type": "TASK"
+        }
+    }
+}

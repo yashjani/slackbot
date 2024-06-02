@@ -1,0 +1,124 @@
+{
+  "trigger_id": "triggerId",
+  "view": {
+    "type": "modal",
+    "callback_id": "industry_select_modal",
+    "title": {
+      "type": "plain_text",
+      "text": "Wicebot",
+      "emoji": true
+    },
+    "submit": {
+      "type": "plain_text",
+      "text": "Submit",
+      "emoji": true
+    },
+    "close": {
+      "type": "plain_text",
+      "text": "Cancel",
+      "emoji": true
+    },
+    "blocks": [
+      {
+        "type": "input",
+        "block_id": "industry_select_block",
+        "label": {
+          "type": "plain_text",
+          "text": "Select Your Field",
+          "emoji": true
+        },
+        "element": {
+          "type": "static_select",
+          "action_id": "industry_select_action",
+          "placeholder": {
+            "type": "plain_text",
+            "text": "Choose an industry",
+            "emoji": true
+          },
+          "options": [
+            {
+              "text": {
+                "type": "plain_text",
+                "text": "Sports Spotlight",
+                "emoji": true
+              },
+              "value": "sports_spotlight"
+            },
+            {
+              "text": {
+                "type": "plain_text",
+                "text": "Real Estate Radar",
+                "emoji": true
+              },
+              "value": "real_estate_radar"
+            },
+            {
+              "text": {
+                "type": "plain_text",
+                "text": "Marketing Maven",
+                "emoji": true
+              },
+              "value": "marketing_maven"
+            },
+            {
+              "text": {
+                "type": "plain_text",
+                "text": "Stock Market Scoop",
+                "emoji": true
+              },
+              "value": "stock_market_scoop"
+            },
+            {
+              "text": {
+                "type": "plain_text",
+                "text": "Software Sphere",
+                "emoji": true
+              },
+              "value": "software_sphere"
+            },
+            {
+              "text": {
+                "type": "plain_text",
+                "text": "Hardware Hub",
+                "emoji": true
+              },
+              "value": "hardware_hub"
+            },
+            {
+              "text": {
+                "type": "plain_text",
+                "text": "Tech Trends",
+                "emoji": true
+              },
+              "value": "tech_trends"
+            },
+            {
+              "text": {
+                "type": "plain_text",
+                "text": "Finance Focus",
+                "emoji": true
+              },
+              "value": "finance_focus"
+            },
+            {
+              "text": {
+                "type": "plain_text",
+                "text": "Health Highlights",
+                "emoji": true
+              },
+              "value": "health_highlights"
+            },
+            {
+              "text": {
+                "type": "plain_text",
+                "text": "Auto Arena",
+                "emoji": true
+              },
+              "value": "auto_arena"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

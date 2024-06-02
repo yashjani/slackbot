@@ -1,0 +1,235 @@
+{   
+	"trigger_id": "triggerId",
+	"view": {
+	"type": "modal",
+	"callback_id": "CodeToWrite",
+	"title": {
+		"type": "plain_text",
+		"text": "My App",
+		"emoji": true
+	},
+	"submit": {
+		"type": "plain_text",
+		"text": "Submit",
+		"emoji": true
+	},
+	"close": {
+		"type": "plain_text",
+		"text": "Cancel",
+		"emoji": true
+	},
+	"blocks": [
+		{
+			"type": "input",
+			"block_id": "in_lang",
+			"label": {
+				"type": "plain_text",
+				"text": "Language",
+				"emoji": true
+			},
+			"optional": false,
+			"dispatch_action": false,
+			"element": {
+				"type": "static_select",
+				"action_id": "lang_value",
+				"placeholder": {
+					"type": "plain_text",
+					"text": "Choose Language",
+					"emoji": true
+				},
+				"initial_option": {
+					"text": {
+						"type": "plain_text",
+						"text": "React",
+						"emoji": true
+					},
+					"value": "React"
+				},
+				"options": [
+					{
+						"text": {
+							"type": "plain_text",
+							"text": "C#",
+							"emoji": true
+						},
+						"value": "C#"
+					},
+					{
+						"text": {
+							"type": "plain_text",
+							"text": "C++",
+							"emoji": true
+						},
+						"value": "C++"
+					},
+					{
+						"text": {
+							"type": "plain_text",
+							"text": "Erlang",
+							"emoji": true
+						},
+						"value": "Erlang"
+					},
+					{
+						"text": {
+							"type": "plain_text",
+							"text": "Go",
+							"emoji": true
+						},
+						"value": "Go"
+					},
+					{
+						"text": {
+							"type": "plain_text",
+							"text": "Haskell",
+							"emoji": true
+						},
+						"value": "Haskell"
+					},
+					{
+						"text": {
+							"type": "plain_text",
+							"text": "Java",
+							"emoji": true
+						},
+						"value": "Java"
+					},
+					{
+						"text": {
+							"type": "plain_text",
+							"text": "JavaScript",
+							"emoji": true
+						},
+						"value": "JavaScript"
+					},
+					{
+						"text": {
+							"type": "plain_text",
+							"text": "Kotlin",
+							"emoji": true
+						},
+						"value": "Kotlin"
+					},
+					{
+						"text": {
+							"type": "plain_text",
+							"text": "Objective-C",
+							"emoji": true
+						},
+						"value": "Objective-C"
+					},
+					{
+						"text": {
+							"type": "plain_text",
+							"text": "PHP",
+							"emoji": true
+						},
+						"value": "PHP"
+					},
+					{
+						"text": {
+							"type": "plain_text",
+							"text": "Python",
+							"emoji": true
+						},
+						"value": "Python"
+					},
+					{
+						"text": {
+							"type": "plain_text",
+							"text": "Ruby",
+							"emoji": true
+						},
+						"value": "Ruby"
+					},
+					{
+						"text": {
+							"type": "plain_text",
+							"text": "Rust",
+							"emoji": true
+						},
+						"value": "Rust"
+					},
+					{
+						"text": {
+							"type": "plain_text",
+							"text": "Scala",
+							"emoji": true
+						},
+						"value": "Scala"
+					},
+					{
+						"text": {
+							"type": "plain_text",
+							"text": "SQL",
+							"emoji": true
+						},
+						"value": "SQL"
+					},
+					{
+						"text": {
+							"type": "plain_text",
+							"text": "Swift",
+							"emoji": true
+						},
+						"value": "Swift"
+					},
+					{
+						"text": {
+							"type": "plain_text",
+							"text": "TypeScript",
+							"emoji": true
+						},
+						"value": "TypeScript"
+					},
+					{
+						"text": {
+							"type": "plain_text",
+							"text": "React",
+							"emoji": true
+						},
+						"value": "React"
+					}
+				]
+			}
+		},
+		{
+			"type": "input",
+			"block_id": "instruction",
+			"label": {
+				"type": "plain_text",
+				"text": "Instruction",
+				"emoji": true
+			},
+			"element": {
+				"type": "plain_text_input",
+				"initial_value": "1. Create FirstName component. \n2. Create LastName component.\n3. Add them to App component.",
+				"action_id": "lang_value",
+				"max_length": 500,
+				"multiline": true
+			}
+		},
+		{
+			"block_id": "channel_id",
+			"type": "input",
+			"optional": false,
+			"label": {
+				"type": "plain_text",
+				"text": "Select a channel to post the result on"
+			},
+			"element": {
+				"action_id": "channel_id",
+				"type": "conversations_select",
+				"response_url_enabled": true,
+				"filter": {
+						"include": [
+							"public",
+							"im"
+						],
+						"exclude_bot_users" : true,
+						"exclude_external_shared_channels": true
+				}
+			}
+		}
+	]}
+}

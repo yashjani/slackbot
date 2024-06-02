@@ -1,0 +1,9 @@
+Dear <@userId>,
+
+We regret to inform you that you have used up all the quota allocated for your account or your trial period has ended. We hope that you found our service useful during your time with us.
+
+To continue using our service, we recommend upgrading to one of our premium plans. Our premium plans offer more quota and additional features that can help you get the most out of our service.
+
+If you have any questions or concerns, please don't hesitate to reach out to our team. We're always happy to help.
+
+Thank you for choosing Wicebot, and we hope to continue serving you in the future.

@@ -1,0 +1,14 @@
+Hello <@userId> and welcome to Wicebot!
+
+I'm a chat bot powered by GPT-3, and I'm here to make your experience on Slack more efficient and productive. As a new user, I'm excited to offer you a 7 day free trial of our services, which includes access to all the premium features of Wicebot.
+
+With Wicebot, you can benefit from a range of useful features, such as:
+
+:speech_balloon: <https://wicebotinactiongifs.s3.us-east-2.amazonaws.com/%40mention.gif | Type @Wicebot "task" and see Wicebot in action!>.
+:briefcase: <https://wicebotinactiongifs.s3.us-east-2.amazonaws.com/conversation.gif | Chat with Wicebot, it's easy as pie>.
+:brain: <https://wicebotinactiongifs.s3.us-east-2.amazonaws.com/rapidcode.gif | Need to code, but don't have the time?>.
+:electric_plug: <https://wicebotinactiongifs.s3.us-east-2.amazonaws.com/translatecode.gif | From Java to Python, we've got you covered!>
+:newspaper: The ability to summarize thread conversations, making it easier for you to quickly understand the main points of a long discussion.
+
+
+Thank you for choosing Wicebot, and I hope you enjoy your free trial!

@@ -1,0 +1,119 @@
+{
+	"trigger_id": "triggerId",
+	"view": {
+		"type": "modal",
+		"callback_id": "Feedback",
+		"submit": {
+			"type": "plain_text",
+			"text": "Submit",
+			"emoji": true
+		},
+		"close": {
+			"type": "plain_text",
+			"text": "Cancel",
+			"emoji": true
+		},
+		"title": {
+			"type": "plain_text",
+			"text": "Wicebot",
+			"emoji": true
+		},
+		"blocks": [
+			{
+				"type": "section",
+				"text": {
+					"type": "plain_text",
+					"text": ":wave: Hey Pal \n\nWicebot love to hear your thoughts and feedback on your experience!",
+					"emoji": true
+				}
+			},
+			{
+				"type": "divider"
+			},
+			{
+				"type": "input",
+				"block_id": "userRating",
+				"label": {
+					"type": "plain_text",
+					"text": "Wicebot help you out with tedious task",
+					"emoji": true
+				},
+				"element": {
+					"type": "radio_buttons",
+					"action_id": "lang_value",
+					"options": [
+						{
+							"text": {
+								"type": "plain_text",
+								"text": "Strongly agree",
+								"emoji": true
+							},
+							"value": "1"
+						},
+						{
+							"text": {
+								"type": "plain_text",
+								"text": "Agree",
+								"emoji": true
+							},
+							"value": "2"
+						},
+						{
+							"text": {
+								"type": "plain_text",
+								"text": "Neither agree nor disagree",
+								"emoji": true
+							},
+							"value": "3"
+						},
+						{
+							"text": {
+								"type": "plain_text",
+								"text": "Disagree",
+								"emoji": true
+							},
+							"value": "4"
+						},
+						{
+							"text": {
+								"type": "plain_text",
+								"text": "Strongly disagree",
+								"emoji": true
+							},
+							"value": "5"
+						}
+					]
+				}
+			},
+			{
+				"type": "input",
+				"block_id": "userFeedback",
+				"label": {
+					"type": "plain_text",
+					"text": "Anything else you want to tell us?",
+					"emoji": true
+				},
+				"element": {
+					"type": "plain_text_input",
+					"action_id": "lang_value",
+					"multiline": true
+				},
+				"optional": true
+			},
+			{
+				"type": "input",
+				"block_id": "userEmail",
+				"element": {
+					"type": "email_text_input",
+				    "action_id": "lang_value"
+				},
+				"label": {
+					"type": "plain_text",
+					"text": "Label",
+					"emoji": true
+				},
+				"optional": true
+			}
+		]
+	}
+}

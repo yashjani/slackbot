@@ -1,0 +1,109 @@
+{
+	"trigger_id": "triggerId",
+	"view": {
+		"type": "modal",
+		"callback_id": "CustomerService",
+		"submit": {
+			"type": "plain_text",
+			"text": "Submit",
+			"emoji": true
+		},
+		"close": {
+			"type": "plain_text",
+			"text": "Cancel",
+			"emoji": true
+		},
+		"title": {
+			"type": "plain_text",
+			"text": "Wicebot Customer Service",
+			"emoji": true
+		},
+		"blocks": [
+			{
+				"type": "section",
+				"text": {
+					"type": "plain_text",
+					"text": ":wave: Hello! Please provide details below to reach out to our customer service.",
+					"emoji": true
+				}
+			},
+			{
+				"type": "divider"
+			},
+			{
+				"type": "section",
+				"block_id": "uploadInstructions",
+				"text": {
+					"type": "mrkdwn",
+					"text": "*Upload an image:* Please upload your image directly in this Slack channel and provide the URL of the uploaded image below."
+				}
+			},
+			{
+				"type": "input",
+				"block_id": "imageUrl",
+				"label": {
+					"type": "plain_text",
+					"text": "Image URL",
+					"emoji": true
+				},
+				"element": {
+					"type": "plain_text_input",
+					"action_id": "image_url_value",
+					"placeholder": {
+						"type": "plain_text",
+						"text": "https://example.com/image.png"
+					}
+				}
+			},
+			{
+				"type": "input",
+				"block_id": "userReason",
+				"label": {
+					"type": "plain_text",
+					"text": "Reason for reaching out",
+					"emoji": true
+				},
+				"element": {
+					"type": "plain_text_input",
+					"action_id": "reason_value",
+					"multiline": true
+				}
+			},
+			{
+				"type": "input",
+				"block_id": "userEmail",
+				"element": {
+					"type": "plain_text_input",
+					"action_id": "email_value"
+				},
+				"label": {
+					"type": "plain_text",
+					"text": "Your Email",
+					"emoji": true
+				}
+			},
+			{
+				"block_id": "channel_id",
+				"type": "input",
+				"optional": false,
+				"label": {
+					"type": "plain_text",
+					"text": "Select a channel to post the result on"
+				},
+				"element": {
+					"action_id": "channel_id",
+					"type": "conversations_select",
+					"response_url_enabled": true,
+					"filter": {
+						"include": [
+							"public",
+							"im"
+						],
+						"exclude_bot_users": true,
+						"exclude_external_shared_channels": true
+					}
+				}
+			}
+		]
+	}
+}

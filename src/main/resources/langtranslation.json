@@ -1,0 +1,281 @@
+{
+	"trigger_id": "triggerId",
+	"view": {
+		"type": "modal",
+		"callback_id": "LangToTranslate",
+		"title": {
+			"type": "plain_text",
+			"text": "Wicebot",
+			"emoji": true
+		},
+		"submit": {
+			"type": "plain_text",
+			"text": "Submit",
+			"emoji": true
+		},
+		"close": {
+			"type": "plain_text",
+			"text": "Cancel",
+			"emoji": true
+		},
+		"blocks": [
+			{
+				"type": "input",
+				"block_id": "from_block",
+				"label": {
+					"type": "plain_text",
+					"text": "From",
+					"emoji": true
+				},
+				"optional": false,
+				"dispatch_action": false,
+				"element": {
+					"type": "static_select",
+					"action_id": "lang_value",
+					"placeholder": {
+						"type": "plain_text",
+						"text": "Choose Language",
+						"emoji": true
+					},
+					"initial_option": {
+						"text": {
+							"type": "plain_text",
+							"text": "English",
+							"emoji": true
+						},
+						"value": "English"
+					},
+					"options": [
+						{
+							"text": {
+								"type": "plain_text",
+								"text": "English",
+								"emoji": true
+							},
+							"value": "English"
+						},
+						{
+							"text": {
+								"type": "plain_text",
+								"text": "Spanish",
+								"emoji": true
+							},
+							"value": "Spanish"
+						},
+						{
+							"text": {
+								"type": "plain_text",
+								"text": "French",
+								"emoji": true
+							},
+							"value": "French"
+						},
+						{
+							"text": {
+								"type": "plain_text",
+								"text": "German",
+								"emoji": true
+							},
+							"value": "German"
+						},
+						{
+							"text": {
+								"type": "plain_text",
+								"text": "Chinese",
+								"emoji": true
+							},
+							"value": "Chinese"
+						},
+						{
+							"text": {
+								"type": "plain_text",
+								"text": "Japanese",
+								"emoji": true
+							},
+							"value": "Japanese"
+						},
+						{
+							"text": {
+								"type": "plain_text",
+								"text": "Korean",
+								"emoji": true
+							},
+							"value": "Korean"
+						},
+						{
+							"text": {
+								"type": "plain_text",
+								"text": "Russian",
+								"emoji": true
+							},
+							"value": "Russian"
+						},
+						{
+							"text": {
+								"type": "plain_text",
+								"text": "Portuguese",
+								"emoji": true
+							},
+							"value": "Portuguese"
+						},
+						{
+							"text": {
+								"type": "plain_text",
+								"text": "Arabic",
+								"emoji": true
+							},
+							"value": "Arabic"
+						}
+					]
+				}
+			},
+			{
+				"type": "input",
+				"block_id": "to_block",
+				"label": {
+					"type": "plain_text",
+					"text": "To",
+					"emoji": true
+				},
+				"optional": false,
+				"dispatch_action": false,
+				"element": {
+					"type": "static_select",
+					"action_id": "lang_value",
+					"placeholder": {
+						"type": "plain_text",
+						"text": "Choose Language",
+						"emoji": true
+					},
+					"initial_option": {
+						"text": {
+							"type": "plain_text",
+							"text": "Spanish",
+							"emoji": true
+						},
+						"value": "Spanish"
+					},
+					"options": [
+						{
+							"text": {
+								"type": "plain_text",
+								"text": "English",
+								"emoji": true
+							},
+							"value": "English"
+						},
+						{
+							"text": {
+								"type": "plain_text",
+								"text": "Spanish",
+								"emoji": true
+							},
+							"value": "Spanish"
+						},
+						{
+							"text": {
+								"type": "plain_text",
+								"text": "French",
+								"emoji": true
+							},
+							"value": "French"
+						},
+						{
+							"text": {
+								"type": "plain_text",
+								"text": "German",
+								"emoji": true
+							},
+							"value": "German"
+						},
+						{
+							"text": {
+								"type": "plain_text",
+								"text": "Chinese",
+								"emoji": true
+							},
+							"value": "Chinese"
+						},
+						{
+							"text": {
+								"type": "plain_text",
+								"text": "Japanese",
+								"emoji": true
+							},
+							"value": "Japanese"
+						},
+						{
+							"text": {
+								"type": "plain_text",
+								"text": "Korean",
+								"emoji": true
+							},
+							"value": "Korean"
+						},
+						{
+							"text": {
+								"type": "plain_text",
+								"text": "Russian",
+								"emoji": true
+							},
+							"value": "Russian"
+						},
+						{
+							"text": {
+								"type": "plain_text",
+								"text": "Portuguese",
+								"emoji": true
+							},
+							"value": "Portuguese"
+						},
+						{
+							"text": {
+								"type": "plain_text",
+								"text": "Arabic",
+								"emoji": true
+							},
+							"value": "Arabic"
+						}
+					]
+				}
+			},
+			{
+				"type": "input",
+				"block_id": "code",
+				"label": {
+					"type": "plain_text",
+					"text": "Text to translate",
+					"emoji": true
+				},
+				"element": {
+					"type": "plain_text_input",
+					"action_id": "lang_value",
+					"max_length": 1000,
+					"multiline": true
+				}
+			},
+			{
+				"block_id": "channel_id",
+				"type": "input",
+				"optional": false,
+				"label": {
+					"type": "plain_text",
+					"text": "Select a channel to post the result on"
+				},
+				"element": {
+					"action_id": "channel_id",
+					"type": "conversations_select",
+					"response_url_enabled": true,
+					"filter": {
+						"include": [
+							"public",
+							"im"
+						],
+						"exclude_bot_users": true,
+						"exclude_external_shared_channels": true
+					}
+				}
+			}
+		]
+	}
+}

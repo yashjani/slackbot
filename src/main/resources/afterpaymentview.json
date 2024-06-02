@@ -1,0 +1,146 @@
+{
+	"view_id": "viewId",
+	"hash": "hashId",
+	"type": "home",
+	"blocks": [
+		{
+			"type": "header",
+			"text": {
+				"type": "plain_text",
+				"text": "Unleash the power of :bulb: GPT with :robot_face: Wicebot, your ultimate AI companion :speech_balloon:",
+				"emoji": true
+			}
+		},
+		{
+			"type": "divider"
+		},
+		{
+			"type": "actions",
+			"elements": [
+				{
+					"type": "button",
+					"style": "danger",
+					"text": {
+						"type": "plain_text",
+						"text": "Manage Subscription"
+					},
+					"action_id": "pay1",
+					"value": "upgrade_basic",
+					"url": "customerPortalUrl"
+				}
+			]
+		},
+		{
+			"type": "divider"
+		},
+		{
+			"type": "section",
+			"text": {
+					"type": "mrkdwn",
+					"text": "*Usage:*\n\nYou are currently on the planName plan and have used usedRequest out of totalRequest this month."
+			}
+		},
+		{
+			"type": "divider"
+		},
+		{
+			"type": "section",
+			"text": {
+					"type": "mrkdwn",
+					"text": "*Feedback:*\n\nTell me how can I improvise."
+			}
+		},
+		{
+			"type": "actions",
+			"elements": [
+				{
+					"type": "button",
+					"style": "danger",
+					"text": {
+						"type": "plain_text",
+						"text": "Give a Feedback"
+					},
+					"action_id": "feedback",
+					"value": "upgrade_pro"
+				}
+			]
+		},
+		{
+			"type": "divider"
+		},
+		{
+			"type": "section",
+			"text": {
+				"type": "mrkdwn",
+				"text": "*Welcome to Wicebot!*\nHere are some of our features:"
+			}
+		},
+		{
+			"type": "section",
+			"text": {
+			"type": "mrkdwn",
+				"text": ":speech_balloon: Wicebot can answer questions and respond to requests when mentioned in a message.\n:briefcase: Wicebot can engage in conversational interactions with users in the message tab.\n:brain: Wicebot can generate code quickly in response to a shortcut click, allowing users to save time and increase productivity.\n:electric_plug: Wicebot can translate code from one programming language to another, helping users who work with multiple languages.\n:newspaper: Wicebot can summarize thread conversations, making it easier for users to quickly understand the main points of a long discussion."
+			}
+		},
+		{
+			"type": "divider"
+		},
+		{
+			"type": "section",
+			"text": {
+				"type": "mrkdwn",
+				"text": "*1. Wicebot mention in action!*"
+			}
+		},
+	    {
+				"type": "image",
+				"image_url": "https://wicebotinactiongifs.s3.us-east-2.amazonaws.com/%40mention.gif",
+				"alt_text": "Wicebot in action"
+		},
+		{
+			"type": "divider"
+		},
+		{
+			"type": "section",
+			"text": {
+				"type": "mrkdwn",
+				"text": "*2. Chat with Wicebot, it's easy as pie!*"
+			}
+		},				
+    	{
+			"type": "image",
+			"image_url": "https://wicebotinactiongifs.s3.us-east-2.amazonaws.com/conversation.gif",
+			"alt_text": "Chat with Wicebot, it's easy as pie!"
+		},
+		{
+			"type": "divider"
+		},
+		{
+			"type": "section",
+			"text": {
+				"type": "mrkdwn",
+				"text": "*3. Need to code, but don't have the time?*"
+			}
+		},				
+	   	{
+			"type": "image",
+			"image_url": "https://wicebotinactiongifs.s3.us-east-2.amazonaws.com/rapidcode.gif",
+			"alt_text": "Need to code, but don't have the time?"
+		},	
+		{
+			"type": "divider"
+		},
+		{
+			"type": "section",
+			"text": {
+				"type": "mrkdwn",
+				"text": "*4. From Java to Python, we've got you covered!*"
+			}
+		},				
+	   	{
+			"type": "image",
+			"image_url": "https://wicebotinactiongifs.s3.us-east-2.amazonaws.com/translatecode.gif",
+			"alt_text": "From Java to Python, we've got you covered!"
+		}
+	]
+}
