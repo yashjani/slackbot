@@ -1,7 +1,7 @@
 # Wicebot : Slack Assistant 💬🤖
 
 <p align="center">
-  <img src="doc/banner.png" alt="Wicebot banner" width="200"/>
+  <img src="src/banner.png" alt="Wicebot banner" width="200"/>
 </p>
 
 ![Java](https://img.shields.io/badge/Java-1.8-blue?style=for-the-badge&logo=java)
@@ -47,7 +47,7 @@
 ## 🏗️ How It Works (Architecture)
 
 <p align="center">
-  <img src="doc/diagram.png" alt="Wicebot banner" width="900"/>
+  <img src="src/diagram.png" alt="Wicebot banner" width="900"/>
 </p>
 
 ## 🚀 Quick Start
